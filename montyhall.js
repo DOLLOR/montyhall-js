@@ -90,10 +90,12 @@ const groupPercentBy = (list) => {
     // 分别进行10000次不变选择和改变选择的游戏
     let nochange = [];
     let change = [];
+    console.log('游戏开始');
     for(let i=0;i<10000;i++){
         nochange.push(game(false));
         change.push(game(true));
     }
+    console.log('游戏结束');
     console.log('不变选择的结果分布',groupPercentBy(nochange));
     console.log('改变选择的结果分布',groupPercentBy(change));
 }
