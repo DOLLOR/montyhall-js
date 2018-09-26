@@ -94,7 +94,7 @@ const groupPercentBy = (list) => {
         nochange.push(game(false));
         change.push(game(true));
     }
-    console.log('游戏结果');
+    console.log('游戏结果（true=恭喜中奖;false=谢谢惠顾）：');
     console.log('不变选择的结果分布',groupPercentBy(nochange));
     console.log('改变选择的结果分布',groupPercentBy(change));
 }
